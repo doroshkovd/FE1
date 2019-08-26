@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Av.by</title>
+</head>
+<body>
+<form action="https://cars.av.by/search" method="GET">
+  <label for="name">Марка:</label><br />
+  <input type="text"
+         name="name"
+         id="name"
+         value="" /><br />
+  <label for="year-from">Начальный год выпуска</label><br />
+  <select name="year_from" id="year-from">
+    <option value="1990" selected>1990</option>
+    <option value="1995" >1995</option>
+    <option value="2000" >2000</option>
+    <option value="2005" >2005</option>
+    <option value="2010" >2010</option>
+  </select><br />
+  <label for="year-to">Конечный год выпуска</label><br />
+  <select name="year_to" id="year-to">
+    <option value="1990" selected>1990</option>
+    <option value="1995" >1995</option>
+    <option value="2000" >2000</option>
+    <option value="2005" >2005</option>
+    <option value="2010" >2010</option>
+  </select><br />
+  <label for="transmision">Тип трансмисии:</label><br />
+  <input type="radio" value="2" id="transmision" name="transmission" />Механика <br />
+  <input type="radio" value="1" name="transmission" /> Автомат <br />
+  <hr />
+  <input type="submit" value="Найти" />
+</form>
+</body>
+</html>
