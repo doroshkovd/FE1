@@ -1,0 +1,25 @@
+input {
+    background: red; /* Comment */
+    color: green;
+}
+
+input {
+    background: none;
+}
+
+.green-input {
+    background: green;
+    color: red;
+}
+
+.margin20 {
+    margin-left: 20px;
+}
+
+label {
+    color: blue;
+}
+
+#vehicle3 {
+    width: 33px;
+}
