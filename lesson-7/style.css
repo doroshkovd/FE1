@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Pompadur;
+    src: url(fonts/pompadur.ttf);
+}
+
+body {
+    background: url("pexels-photo-1939485.jpeg") 10px 10px no-repeat;
+}
+@media (min-width:1200px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    #sidebar {
+        color: red;
+    }    ​
+}
+
+#sidebar {
+    font-family: Pompadur;
+    border: 1px dotted #ff0000;
+    border-top: none;
+    border-right:1px solid #ff0000;
+    border-bottom: 1px solid;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 10px 5px 12px 15px;
+    padding: 15px;
+    padding: 10px 15px;
+    text-align: center;
+
+}
+
+.decorated {
+ text-decoration: underline;
+}
+
+h1 {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.transform {
+    text-transform: uppercase;
+}
+
+#list {
+    list-style: square inside;
+    color: #fe626d;
+    font-size: 0.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+li {
+    font-size: 0.5rem;
+}
+
+.disc {
+    list-style: disc;
+    cursor: pointer;
+    color: rgba(255, 255, 0, .5);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<aside id="sidebar">
+  Боковая панель
+</aside>
+<main>
+  <h1 class="decorated transform">Main content</h1>
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li class="disc" onclick="alert('hello World!!!')">Item 3</li>
+    <li>Item 4
+      <ul>
+        <li>List 2</li>
+        <li>List 2</li>
+        <li>List 2
+          <ul>
+            <li>List 3</li>
+            <li>List 3</li>
+            <li>List 3</li>
+            <li>List 3</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Item 5</li>
+  </ul>
+  <p style="width: 100px; height: 30px; border: 1px solid">
+    Если изображение имеет оба внутренних размера,
+    оно отображается с таким размером.  Если оно не имеет внутренних размеров и внутренней пропорции, оно отображается с размеров области расположения фона. Если оно не  имеет размеров, но имеет пропорцию, оно отображается так, если был был бы указанcontain.  Если изображение имеет один внутренний размер и пропорцию, оно отображается с размером, определенным этим одним размером и пропорцией.  Если изображение имеет один внутренний размер, но не имеет пропоцию, оно отображается с использованием внутреннего размера и соответсвующем размером области позиционирования фона.
+  </p>
+</main>
+</body>
+</html>
