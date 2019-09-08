@@ -1,0 +1,112 @@
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+a:hover {
+    background: gold;
+}
+
+.menu a {
+    color: red;
+}
+
+.menu + div {
+    background: #ccc;
+}
+
+.menu + div a {
+    color: green;
+}
+
+div + a {
+    border: 1px solid red;
+}
+
+#menu li > a {
+    color: red;
+}
+
+/*[type] {*/
+/*    border: 1px solid red;*/
+/*}*/
+
+[title], a[href*=ya] {
+    text-transform: uppercase;
+}
+
+input[type=text] {
+    width: 200px;
+}
+
+a[href^=https] {
+    font-weight: bold;
+}
+
+a[href$=ru] {
+    color: brown;
+}
+
+input[type=checkbox]:checked + label {
+    color: red;
+}
+
+/*input[type=checkbox] {*/
+/*    display: none;*/
+/*}*/
+input:invalid{background-color:#ffdddd;}
+form:invalid{border: 5px solid #ffdddd; }
+input:valid{background-color: #ddffdd;}
+form:valid {border: 5px solid #ddffdd;}
+input:required { border-color: #800000; border-width: 3px;}
+
+input:read-only {
+    color: #ccc;
+    background: #eee;
+}
+
+span:last-of-type, strong:first-of-type {
+    background: yellow;
+}
+/*strong:last-child {*/
+/*    background: yellow;*/
+/*}*/
+
+
+button:disabled {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+p::first-line {
+    background: lime;
+    font-size: 2rem;
+}
+
+p:hover::before {
+    content: '"';
+    color: #333;
+}
+
+p:hover::after {
+    content: '"';
+    color: #333;
+}
+
+span {
+    display: block;
+}
+
+span::first-letter, div::first-letter {
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+span + div::selection {
+    background-color: yellow;
+}
