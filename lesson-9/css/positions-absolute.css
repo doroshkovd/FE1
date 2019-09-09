@@ -1,0 +1,121 @@
+body { margin: 0; /* Убираем отступы */ }
+
+.sidebar, .content {
+    position: absolute; /* Абсолютное позиционирование */
+    overflow: auto; /* Полосы прокрутки при необходимости */
+    padding: 10px; /* Поля вокруг текста */
+    top: 61px; /* Расстояние от верхнего края */
+    bottom: 0; /* Расстояние от нижнего края */
+}
+header {
+    height: 60px; /* Высота */
+    background: #FEDFC0; /* Цвет фона */
+    border-bottom: 1px solid #7B5427; /* Линия снизу */
+}
+header h1 {
+    line-height: 60px; /* Выравниваем по середине */
+    margin: 0 10px; /* Сдвигаем заголовок */
+}
+.sidebar {
+    width: 150px; /* Ширина */
+    background: #ECF5E4; /* Цвет фона */
+    border-right: 1px solid #231F20; /* Линия справа */
+}
+.content {
+    left: 171px; /* Расстояние от левого края */
+    right: 0; /* Расстояние справа */
+}
+
+.overlay {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; top: 0; bottom: 0; /* Занимает всё пространство */
+    background: rgba(0, 0, 0, 0.8); /* Полупрозрачный цвет фона */
+}
+.dialog {
+    position: absolute; /* Абсолютное позиционирование */
+    background: #fff; /* Цвет фона */
+    width: 260px; /* Ширина */
+    padding: 20px; /* Поля */
+    min-height: 180px; /* Минимальная высота */
+    left: 0; right: 0; /* Нужно для выравнивания */
+    margin: 80px auto 0; /* Выравниваем по центру */
+}
+
+
+.checkbox {
+    width: 28px; /* Ширина переключателя */
+    height: 28px; /* Высота переключателя */
+    background: #333; /* Цвет рамки */
+}
+.checkbox input[type=checkbox] {
+    position: absolute; /* Абсолютное позиционирование */
+    left: -9999px; /* Скрываем элемент */
+}
+.checkbox input[type=checkbox]:checked + label {
+    background: #009d4b; /* Цвет фона включенного переключателя */
+}
+.checkbox label {
+    display: block; /* Блочный элемент */
+    width: 20px; /* Ширина */
+    height: 20px; /* Высота */
+    position: relative; /* Относительное позиционирование */
+    left: 4px; top: 4px; /* Смещаем вправо и вниз */
+    background: #fff; /* Цвет фона выключенного переключателя */
+}
+
+.block-1 {
+    position: relative; /* Относительное позиционирование */
+    background: #3989c9; /* Синий цвет фона */
+    min-height: 160px; /* Минимальная высота */
+    padding: 20px; /* Поля */
+    border: 2px solid #000; /* Параметры границы */
+}
+.block-2 {
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0; bottom: 0; /* Положение элемента */
+    background: #feea3f; /* Жёлтый цвет фона */
+    width: 50px; height: 50px; /* Размеры элемента */
+}
+
+figure, .pub {
+    position: absolute; /* Абсолютное позиционирование */
+}
+.pub {
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    left: 10px; top: 10px; /* Положение даты */
+    text-align: center; /* Выравнивание по центру */
+    padding: 5px 10px; /* Поля вокруг текста */
+    min-width: 40px; /* Минимальная ширина */
+    border: 2px solid #fff; /* Параметры рамки */
+}
+.date {
+    font-size: 28px; /* Размер шрифта */
+}
+
+
+
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */
+}
+/* Выводим треугольник */
+[data-tooltip]:hover::before {
+    content: '';
+    position: absolute;
+    top: 1.4em; left: 20px;
+    width: 0; height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #3989c9;
+}
+/* Выводим саму подсказку */
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 400px; /* Ширина подсказки */
+    left: 0; top: 2em; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    border-radius: 5px; /* Скругляем уголки */
+}

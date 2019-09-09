@@ -1,0 +1,30 @@
+header {
+    position: fixed; /* Фиксированное позиционирование */
+    left: 0; right: 0; /* Вся ширина */
+    top: 0; /* Положение сверху */
+    padding: 10px; /* Поля вокруг текста */
+    background: #3989c9; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+header h1 {
+    margin: 0; /* Убираем отступы */
+}
+main {
+    min-height: 1000px; /* Минимальная высота */
+    margin-top: 70px; /* Отступ сверху */
+    display: block; /* Для IE */
+}
+
+.msg {
+    position: fixed; /* Фиксированное позиционирование */
+    padding: 10px; /* Поля вокруг текста */
+    background: #009d4b; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    left: 50%; top: 50%; /* Выводим в центре */
+    transform: translate(-50%, -50%); /* Смещаем влево и вверх */
+}
+body {
+    min-height: 1000px; /* Минимальная высота */
+    background: url('../img/tic-tac-toe.png');
+}
+
