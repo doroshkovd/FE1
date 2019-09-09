@@ -17,3 +17,7 @@
 .home:hover, .back:hover, .forward:hover {
     background-position-y: -45px;
 }
+
+/*.image-link:hover {*/
+/*    background-position-y: -45px;*/
+/*}*/
