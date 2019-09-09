@@ -1,0 +1,19 @@
+.image-link {
+    display: inline-block;
+    width: 45px;
+    height: 44px;
+    background: url("../img/img_navsprites_hover.gif") 0 0 no-repeat;
+}
+
+.forward {
+   background-position: -91px 0px;
+}
+
+.back {
+    background-position: -47px 0px;
+    width: 43px;
+}
+
+.home:hover, .back:hover, .forward:hover {
+    background-position-y: -45px;
+}
