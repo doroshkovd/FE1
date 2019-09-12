@@ -1,0 +1,20 @@
+.contacts {
+    width: 400px;
+    height: 100px;
+    background: #eee;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.contacts:hover {
+    height: 200px;
+}
+
+main {
+    padding-right: 430px;
+}

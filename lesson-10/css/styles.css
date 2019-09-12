@@ -1,0 +1,59 @@
+/*img {*/
+/*    float: left;*/
+/*    margin: 0 10px 10px 0;*/
+
+/*}*/
+
+/*div {*/
+/*    border: 1px solid;*/
+/*}*/
+
+#float-exp div.first, #float-exp div.second {
+    float: left;
+}
+
+#float-exp div.second + div {
+    clear: both;
+}
+
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    background: #cccccc;
+}
+
+#menu ul li {
+    /*float: left;*/
+    display: inline-block;
+    margin: 0;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-right: 1px solid #ff0000;
+    font-size: 18px;
+    color: #333;
+}
+
+#menu ul li a:hover {
+    background: #ff0000;
+    color: #fff;
+}
+
+
+
