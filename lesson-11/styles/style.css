@@ -1,0 +1,26 @@
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+    width: 250px;
+    background: #A7CECC;
+    height: 500px;
+}
+
+header, footer {
+    background: #ddffdd;
+}
+
+.main {
+    background: #cccccc;
+    height: 500px;
+}
+
+.clearfix:after {
+    content: ' ';
+    clear: both;
+    display: block;
+}

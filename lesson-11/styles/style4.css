@@ -1,0 +1,39 @@
+.left {
+    width: 200px;
+    background: #A7CECC;
+    height: 500px;
+}
+
+.right {
+    width: 200px;
+    background: #A7CECC;
+    height: 500px;
+}
+
+main {
+    display: flex;
+}
+
+header, footer {
+    background: #ddffdd;
+}
+
+.main {
+    background: #cccccc;
+    height: 500px;
+    min-width: 100px;
+    width: 100%;
+}
+
+.clearfix:after {
+    content: ' ';
+    clear: both;
+    display: block;
+}
+
+
+@media (max-width: 640px) {
+    main {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,31 @@
+.left {
+    float: left;
+    width: 200px;
+    background: #A7CECC;
+    height: 500px;
+}
+
+.right {
+    float: right;
+    width: 200px;
+    background: #A7CECC;
+    height: 500px;
+}
+
+header, footer {
+    background: #ddffdd;
+}
+
+.main {
+    background: #cccccc;
+    height: 500px;
+    margin-left: 201px;
+    margin-right: 201px;
+    min-width: 100px;
+}
+
+.clearfix:after {
+    content: ' ';
+    clear: both;
+    display: block;
+}
