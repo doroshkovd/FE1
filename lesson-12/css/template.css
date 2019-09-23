@@ -1,0 +1,107 @@
+body {
+    background: url("../img/dot-grid.png");
+}
+
+img {
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 4px;
+    background: #fff;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 75px;
+    display: flex;
+    border: 1px solid #333;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 52px;
+    margin-left: 40px;
+}
+
+header nav {
+    align-self: flex-start;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li > a {
+    margin:0 10px;
+    color: #333;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+header nav ul li > a:hover {
+    text-decoration: none;
+    color: #F8463F;
+}
+
+#main {
+    display: flex;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid;
+    background: #ccc;
+}
+
+#main main {
+    width: 100%;
+    padding: 15px;
+}
+
+#main aside {
+    flex-basis: 200px;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+#main aside h3 {
+    border-bottom: 1px solid #333;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#main aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+#main aside ul li a {
+    display: block;
+    padding: 10px 15px 5px 15px;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+
+#main aside ul li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+
