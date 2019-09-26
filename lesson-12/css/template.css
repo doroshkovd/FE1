@@ -8,6 +8,7 @@ img {
     border-radius: 4px;
     background: #fff;
     width: 100%;
+    box-sizing: border-box;
 }
 
 ul {
@@ -23,7 +24,7 @@ a {
     margin: 0 auto;
 }
 
-header {
+header, footer {
     height: 75px;
     display: flex;
     border: 1px solid #333;
@@ -49,7 +50,7 @@ header nav ul {
 }
 
 header nav ul li > a {
-    margin:0 10px;
+    margin: 0 10px;
     color: #333;
     text-decoration: underline;
     font-size: 22px;
@@ -101,6 +102,34 @@ header nav ul li > a:hover {
 #main aside ul li a:hover {
     background: #333;
     color: #fff;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer div {
+    margin: auto;
+}
+
+@media (max-width: 740px) {
+    header {
+        flex-direction: column;
+        height: 100px;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li > a:first-child {
+        margin-left: 0;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+
+    #main main {
+        width: auto;
+    }
 }
 
 
