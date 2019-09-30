@@ -1,0 +1,94 @@
+{
+  "name": "svg-font",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "2a3cd95de2621bd87479396f236fd2a4",
+      "css": "heart",
+      "code": 59392,
+      "src": "websymbols"
+    },
+    {
+      "uid": "62c089cb34e74b3a1200bc7f5314eb4e",
+      "css": "firefox",
+      "code": 59456,
+      "src": "fontelico"
+    },
+    {
+      "uid": "9c2b737b16ae2c8d66b7bfd29ba5ecd8",
+      "css": "chrome",
+      "code": 59457,
+      "src": "fontelico"
+    },
+    {
+      "uid": "45861dd1e5ce4fde338bcccf01eeb808",
+      "css": "opera",
+      "code": 59458,
+      "src": "fontelico"
+    },
+    {
+      "uid": "2a46f1d1c9bd036e17a74e46613c1636",
+      "css": "ie",
+      "code": 59459,
+      "src": "fontelico"
+    },
+    {
+      "uid": "310ffd629da85142bc8669f010556f2d",
+      "css": "file-word",
+      "code": 61890,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f761c3bbe16ba2d332914ecb28e7a042",
+      "css": "file-excel",
+      "code": 61891,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "edcd4022de8d8df266ef7c42d2658ca5",
+      "css": "file-powerpoint",
+      "code": 61892,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "486b835e9eebf54eee78ed12b4291b86",
+      "css": "euro",
+      "code": 61779,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9854f7f091bd4fdf9b8735ed66667b9d",
+      "css": "pound",
+      "code": 61780,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "026007bd17bfc67f3fe013199676f620",
+      "css": "dollar",
+      "code": 61781,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "62e4fa2c664818d20ce4740cadbf9aeb",
+      "css": "rupee",
+      "code": 61782,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5f61f8a682b77d2529296a8061bf9597",
+      "css": "yen",
+      "code": 61783,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "243424d56528e83e4fe9ef6e6347a2ef",
+      "css": "rouble",
+      "code": 61784,
+      "src": "fontawesome"
+    }
+  ]
+}
