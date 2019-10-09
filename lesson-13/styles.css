@@ -1,0 +1,11 @@
+.badge-danger {
+    background: #dc44cf;
+}
+
+a.badge-danger:focus, a.badge-danger:hover {
+    background: #a84fdc;
+}
+
+.breadcrumb-item.active {
+    color: #ffffff;
+}
