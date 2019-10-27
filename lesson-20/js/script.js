@@ -132,9 +132,19 @@ let result57 = getFizzBuzzOutput2(35, 5, 7, getFizzBuzz2);
 
 console.log(result57);
 
+console.dir(window.document);
 
+let arrowFunc = (x, y) => x + y;
 
+console.log(arrowFunc(4, 55));
+//
+// test(5, 'string', () => {
+//
+// });
 
+setTimeout(() => {
+  console.log('3000 ms past')
+}, 3000);
 
 
 

@@ -84,4 +84,8 @@ function resetGame() {
     guessSubmit.disabled = false;
 }
 
+console.dir(document);
+
+
+
 
