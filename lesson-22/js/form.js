@@ -26,3 +26,44 @@ function removeElement(el, timeout = 3000) {
     el.remove();
   }, timeout)
 }
+
+const toastMessage = document.getElementById('toast-message');
+
+for (let item of document.querySelectorAll('.form-control')) {
+
+  item.addEventListener('focus', ()=> {
+    toastMessage.innerHTML = item.dataset.rule;
+    toastMessage.style.opacity = '1';
+  });
+
+  item.addEventListener('focusout', ()=> {
+    toastMessage.style.opacity = '0';
+  });
+}
+
+const buttonUp = document.getElementById('button-up');
+let intervalId;
+
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 800) {
+    buttonUp.style.opacity = '0.8';
+  } else {
+    buttonUp.style.opacity = '0';
+  }
+});
+
+buttonUp.addEventListener('click', () => {
+  let topScroll = window.scrollY;
+  let iteration = Math.round(topScroll / 60);
+  intervalId = setInterval(() => {
+      window.scrollTo(0, topScroll);
+      topScroll -= iteration;
+      if (topScroll < iteration) {
+        window.scrollTo(0, 0);
+        clearInterval(intervalId);
+      }
+  }, 1000 / 60)
+});
+
+
